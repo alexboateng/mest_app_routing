@@ -14,7 +14,16 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(
         title: Text("Login route"),
       ),
-      body: Center(),
+      body: Container(
+        child: Center(
+          child: TextButton(
+            child: Text('Go back'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ),
+      ),
     );
   }
 }
